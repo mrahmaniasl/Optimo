@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimo", "JmetalPackage\Optimo.csproj", "{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BD7B9D1D-F564-426D-85B1-2D208505B821}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7B9D1D-F564-426D-85B1-2D208505B821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7B9D1D-F564-426D-85B1-2D208505B821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7B9D1D-F564-426D-85B1-2D208505B821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7B9D1D-F564-426D-85B1-2D208505B821}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
