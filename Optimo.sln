@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimo", "JmetalPackage\Optimo.csproj", "{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimo", "Optimo\Optimo.csproj", "{0ED4C907-65B1-43E5-A0CB-C6A8B126759D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BD7B9D1D-F564-426D-85B1-2D208505B821}"
 EndProject
