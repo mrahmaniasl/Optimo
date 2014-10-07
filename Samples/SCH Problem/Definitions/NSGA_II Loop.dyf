@@ -1,0 +1,24 @@
+<Workspace Version="0.7.2.20919" X="484.57" Y="6.78" zoom="0.8425" Description="Takes an initital value, a function to produce a new value, and a function that determines whether to keep looping based on the current value.&#xD;&#xA;&#xD;&#xA;In effect, produces the following while loop:&#xD;&#xA;&#xD;&#xA;while(continue?(init))&#xD;&#xA;    init = mutator(init);&#xD;&#xA;return init;" Category="Core.Evaluate" Name="NSGA_II Loop" ID="b6758845-4590-4e2d-a0a9-b86cdefca484">
+  <Elements>
+    <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="c5598f7a-f4f9-4ffc-8c2d-b3b0b1c98d61" nickname="Code Block" x="317" y="114" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="mutator;&#xA;completionCheck;&#xA;a = [Imperative]&#xA;{&#xA;    while (init[1]&lt;completionCheck)&#xA;    {&#xA;        init = __Apply(mutator, init);&#xA;    }&#xA;    return = init;&#xA;};" ShouldFocus="false" />
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="176ca57b-e03b-4e7b-98b8-9976427e46e7" nickname="Input" x="39.6350148367954" y="154.445103857567" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="completionCheck" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="2b7dfe5a-f4e1-47f8-ab78-2f61023c5fed" nickname="Output" x="878" y="147" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="result" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="16cb66e6-cb02-44af-bbba-f2ac06c50aa6" nickname="Input" x="41.7566765578636" y="83.0504451038575" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="mutator" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="d16bd2a0-ec0c-4ad7-b9de-9de05a980e70" nickname="Input" x="41.7566765578633" y="226.670623145401" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="init" />
+    </Dynamo.Nodes.Symbol>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="c5598f7a-f4f9-4ffc-8c2d-b3b0b1c98d61" start_index="2" end="2b7dfe5a-f4e1-47f8-ab78-2f61023c5fed" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="176ca57b-e03b-4e7b-98b8-9976427e46e7" start_index="0" end="c5598f7a-f4f9-4ffc-8c2d-b3b0b1c98d61" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="16cb66e6-cb02-44af-bbba-f2ac06c50aa6" start_index="0" end="c5598f7a-f4f9-4ffc-8c2d-b3b0b1c98d61" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d16bd2a0-ec0c-4ad7-b9de-9de05a980e70" start_index="0" end="c5598f7a-f4f9-4ffc-8c2d-b3b0b1c98d61" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>
