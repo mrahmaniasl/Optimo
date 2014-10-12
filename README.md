@@ -5,7 +5,7 @@ Optimo is a multi-objectve oprimization tool that is created to be used on Dynam
 ## Get Optimo ##
 
  1 - Download Optimo .dll file [Here](https://dl.dropboxusercontent.com/u/25537565/Github/Optimo.dll).	
- 2 - Once you download the package, the .dll files might be blocked. In order to enable the dlls, please right click on each file      and click Properties. Under “General” tab, on the bottom check if there is Security item appears, then Click Unblock button       to enable the dlls.
+ 2 - Once you download the package, the .dll files might be blocked. In order to enable the dlls, please right click on each file      and click Properties. Under “General” tab, on the bottom check if there is Security item appears, then Click Unblock button       to enable the dlls. 
  3 - Open Dynamo 0.7.2 or a newer version, go to “Libraries” tab and click “Import Library…” and select the “Optimo.dll” from the      folder that you have saved the .dll file.
 
 
