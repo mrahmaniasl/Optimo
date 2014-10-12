@@ -10,7 +10,7 @@ Optimo is a multi-objectve oprimization tool that is created to be used on Dynam
  
  3 - Open Dynamo 0.7.2 or a newer version, go to “Libraries” tab and click “Import Library…” and select the “Optimo.dll” from the      folder that you have saved the .dll file.
 
-
+## Optimo License ##
 
 Optimo is provided under the following copyright:
 
