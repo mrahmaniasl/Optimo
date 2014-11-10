@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1078FC20-8DD5-445C-A28D-FA6ED008232E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Optimo_SMPSO</RootNamespace>
+    <AssemblyName>Optimo-SMPSO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comparator\CrowdingDistanceComparator.cs" />
+    <Compile Include="comparator\DominanceAndCrowdingDistanceComparator.cs" />
+    <Compile Include="comparator\DominanceComparator.cs" />
+    <Compile Include="comparator\EqualSolutions.cs" />
+    <Compile Include="comparator\ObjectiveComparator.cs" />
+    <Compile Include="crossover\Crossover.cs" />
+    <Compile Include="crossover\CrossoverFactory.cs" />
+    <Compile Include="crossover\DifferentialEvolutionCrossover.cs" />
+    <Compile Include="crossover\SBXCrossover.cs" />
+    <Compile Include="jmetal.core\Algorithm.cs" />
+    <Compile Include="jmetal.core\Operator.cs" />
+    <Compile Include="jmetal.core\Problem.cs" />
+    <Compile Include="jmetal.core\Solution.cs" />
+    <Compile Include="jmetal.core\SolutionSet.cs" />
+    <Compile Include="jmetal.core\SolutionType.cs" />
+    <Compile Include="jmetal.core\toArr.cs" />
+    <Compile Include="jmetal.core\Variable.cs" />
+    <Compile Include="metaheuristics\SMPSO.cs" />
+    <Compile Include="mutation\Mutation.cs" />
+    <Compile Include="mutation\MutationFactory.cs" />
+    <Compile Include="mutation\PolynomialMutation.cs" />
+    <Compile Include="Optimo_SMPSO.cs" />
+    <Compile Include="problems\myTest.cs" />
+    <Compile Include="problems\ProblemFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selection\BinaryTournament.cs" />
+    <Compile Include="selection\Selection.cs" />
+    <Compile Include="selection\SelectionFactory.cs" />
+    <Compile Include="selection\WorstSolutionSelection.cs" />
+    <Compile Include="settings\Settings.cs" />
+    <Compile Include="settings\SettingsFactory.cs" />
+    <Compile Include="settings\SMPSO_settings.cs" />
+    <Compile Include="solutionType\BinarySolutionType.cs" />
+    <Compile Include="solutionType\RealSolutionType.cs" />
+    <Compile Include="util\archives\CrowdingArchive.cs" />
+    <Compile Include="util\Distance.cs" />
+    <Compile Include="util\MinFastSort.cs" />
+    <Compile Include="util\PseudoRandom.cs" />
+    <Compile Include="util\RandomPermutation.cs" />
+    <Compile Include="util\Ranking.cs" />
+    <Compile Include="variables\Binary.cs" />
+    <Compile Include="variables\Real.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

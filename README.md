@@ -1,6 +1,6 @@
 Optimo : Multi-objective Optimization for Dynamo
 ======
-Optimo is a multi-objective optimization tool that is created to be used on Dynamo [dynamobim.org](http://dynamobim.org/learn/). Optimo is developed based on [jmetal.NET](http://jmetalnet.sourceforge.net/) open source code, which was originaly created by [Antonio J. Nebro](antonio@lcc.uma.es). 
+Optimo is a multi-objectve oprimization tool that is created to be used on Dynamo [dynamobim.org](http://dynamobim.org/learn/). Optimo is developed based on [jmetal.NET](http://jmetalnet.sourceforge.net/) open source code, which was originaly created by [Antonio J. Nebro](antonio@lcc.uma.es). 
 
 ## Get Optimo ##
 

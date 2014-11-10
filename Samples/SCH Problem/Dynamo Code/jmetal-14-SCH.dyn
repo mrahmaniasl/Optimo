@@ -1,4 +1,4 @@
-<Workspace Version="0.7.2.15398" X="39.9596706753698" Y="218.582824280572" zoom="0.548323784094538" Description="" Category="" Name="Home">
+<Workspace Version="0.7.2.14456" X="39.9596706753698" Y="218.582824280572" zoom="0.548323784094538" Description="" Category="" Name="Home">
   <Elements>
     <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="59e9f9e4-c5ec-4d5f-967e-3e528be427ee" nickname="Code Block" x="75" y="130" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="10;" ShouldFocus="false" />
     <Dynamo.Nodes.CodeBlockNodeModel type="Dynamo.Nodes.CodeBlockNodeModel" guid="8c5decf3-4814-4968-ab25-4c9ba9671c38" nickname="Code Block" x="75" y="216" isVisible="true" isUpstreamVisible="true" lacing="Disabled" CodeText="2;" ShouldFocus="false" />
@@ -31,8 +31,6 @@
     <DSCore.File.Filename type="DSCore.File.Filename" guid="94658349-5d14-406e-900e-9cb5c0c2857a" nickname="File Path" x="2239.09281061027" y="274.029001787036" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <System.String>C:\Users\MRahmaniAsl-x\Desktop\gbXML\test.csv</System.String>
     </DSCore.File.Filename>
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" nickname="NSGA_II.InitialSolutionList" x="370.532025445545" y="236.535196332224" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\..\Jmetal\Optimo-01\JmetalPackage\bin\Debug\Optimo.dll" function="Optimo.NSGA_II.InitialSolutionList@double,double,int[],int[]" />
-    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="af7ae6b1-3952-4e36-b976-63bf12cda1e6" nickname="NSGA_II.AssignFitnessFuncResults" x="1301.9005968209" y="210.806782758319" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\..\Jmetal\Optimo-01\JmetalPackage\bin\Debug\Optimo.dll" function="Optimo.NSGA_II.AssignFitnessFuncResults@double[][],double[][]" />
     <Dynamo.Nodes.Function type="Dynamo.Nodes.Function" guid="4d9465d9-7049-4840-9ffd-a91822ef4d21" nickname="NSGA_II Function-SCH" x="1641.47992893885" y="289.627571988707" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
       <ID value="ad01a17d-1988-4791-93ae-af5114eee47c" />
       <Name value="NSGA_II Function-SCH" />
@@ -46,31 +44,33 @@
         <Output value="Results" />
       </Outputs>
     </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="a04560e9-60b1-478b-8c4d-e8e181e3704a" nickname="NSGA_II.InitialSolutionList" x="377.893421598234" y="274.627513301541" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\..\..\Optimo\bin\Debug\Optimo.dll" function="Optimo.NSGA_II.InitialSolutionList@double,double,int[],int[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="8491a647-89d5-43a2-a2cb-1af091185463" nickname="NSGA_II.AssignFitnessFuncResults" x="1276.99722541025" y="309.278572677664" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="..\..\..\Optimo\bin\Debug\Optimo.dll" function="Optimo.NSGA_II.AssignFitnessFuncResults@double[][],double[][]" />
   </Elements>
   <Connectors>
-    <Dynamo.Models.ConnectorModel start="59e9f9e4-c5ec-4d5f-967e-3e528be427ee" start_index="0" end="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="8c5decf3-4814-4968-ab25-4c9ba9671c38" start_index="0" end="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="59e9f9e4-c5ec-4d5f-967e-3e528be427ee" start_index="0" end="a04560e9-60b1-478b-8c4d-e8e181e3704a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8c5decf3-4814-4968-ab25-4c9ba9671c38" start_index="0" end="a04560e9-60b1-478b-8c4d-e8e181e3704a" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="9af1d3f3-c357-4832-b68a-2b33287ea615" start_index="0" end="c3912945-8fa6-4fd1-b8f1-0a37e1666eff" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="89e9cd7b-5c04-4e68-a467-ede6a39a53cc" start_index="0" end="8742f66b-4ac1-45f3-a6a6-4676a5c9bf1f" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="c3912945-8fa6-4fd1-b8f1-0a37e1666eff" start_index="0" end="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" end_index="2" portType="0" />
     <Dynamo.Models.ConnectorModel start="c3912945-8fa6-4fd1-b8f1-0a37e1666eff" start_index="0" end="4d9465d9-7049-4840-9ffd-a91822ef4d21" end_index="1" portType="0" />
-    <Dynamo.Models.ConnectorModel start="8742f66b-4ac1-45f3-a6a6-4676a5c9bf1f" start_index="0" end="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c3912945-8fa6-4fd1-b8f1-0a37e1666eff" start_index="0" end="a04560e9-60b1-478b-8c4d-e8e181e3704a" end_index="2" portType="0" />
     <Dynamo.Models.ConnectorModel start="8742f66b-4ac1-45f3-a6a6-4676a5c9bf1f" start_index="0" end="4d9465d9-7049-4840-9ffd-a91822ef4d21" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8742f66b-4ac1-45f3-a6a6-4676a5c9bf1f" start_index="0" end="a04560e9-60b1-478b-8c4d-e8e181e3704a" end_index="3" portType="0" />
     <Dynamo.Models.ConnectorModel start="26f40b17-e2bc-4927-b615-4a2dbbea317f" start_index="0" end="fbadaa4f-4047-4e7b-8708-1d1d10bb9073" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="26f40b17-e2bc-4927-b615-4a2dbbea317f" start_index="0" end="13c27df1-0467-48d8-9cee-6396b110c371" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="fbadaa4f-4047-4e7b-8708-1d1d10bb9073" start_index="0" end="87717213-07bd-4ba7-9be8-9c728d542e9c" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="13c27df1-0467-48d8-9cee-6396b110c371" start_index="0" end="87717213-07bd-4ba7-9be8-9c728d542e9c" end_index="1" portType="0" />
-    <Dynamo.Models.ConnectorModel start="87717213-07bd-4ba7-9be8-9c728d542e9c" start_index="0" end="af7ae6b1-3952-4e36-b976-63bf12cda1e6" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="87717213-07bd-4ba7-9be8-9c728d542e9c" start_index="0" end="8491a647-89d5-43a2-a2cb-1af091185463" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="800c0084-9b20-40ff-9fb8-f30a59b888fe" start_index="0" end="3899b91d-f2cf-4688-ae4b-54102afaa653" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="8f192108-8028-4576-9aee-bb50974bc3bc" start_index="0" end="55e49d45-e1de-4468-9e1c-4f97da83af9b" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="f9f3e6ca-9c2c-47c1-8ff2-5b6185c48112" start_index="0" end="8f192108-8028-4576-9aee-bb50974bc3bc" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="3899b91d-f2cf-4688-ae4b-54102afaa653" start_index="0" end="8f192108-8028-4576-9aee-bb50974bc3bc" end_index="2" portType="0" />
     <Dynamo.Models.ConnectorModel start="55e49d45-e1de-4468-9e1c-4f97da83af9b" start_index="0" end="1493a5f1-7c7c-49f9-9b84-9d2c0fd2e731" end_index="1" portType="0" />
     <Dynamo.Models.ConnectorModel start="94658349-5d14-406e-900e-9cb5c0c2857a" start_index="0" end="1493a5f1-7c7c-49f9-9b84-9d2c0fd2e731" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" start_index="0" end="26f40b17-e2bc-4927-b615-4a2dbbea317f" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="3b37752f-eb4e-4260-aba9-9c9ba3a307e1" start_index="0" end="af7ae6b1-3952-4e36-b976-63bf12cda1e6" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="af7ae6b1-3952-4e36-b976-63bf12cda1e6" start_index="0" end="3899b91d-f2cf-4688-ae4b-54102afaa653" end_index="0" portType="0" />
     <Dynamo.Models.ConnectorModel start="4d9465d9-7049-4840-9ffd-a91822ef4d21" start_index="0" end="8f192108-8028-4576-9aee-bb50974bc3bc" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a04560e9-60b1-478b-8c4d-e8e181e3704a" start_index="0" end="26f40b17-e2bc-4927-b615-4a2dbbea317f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a04560e9-60b1-478b-8c4d-e8e181e3704a" start_index="0" end="8491a647-89d5-43a2-a2cb-1af091185463" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8491a647-89d5-43a2-a2cb-1af091185463" start_index="0" end="3899b91d-f2cf-4688-ae4b-54102afaa653" end_index="0" portType="0" />
   </Connectors>
   <Notes />
 </Workspace>
