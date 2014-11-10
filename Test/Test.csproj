@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Optimo">
-      <HintPath>..\JmetalPackage\bin\Debug\Optimo.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +46,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Optimo-Combined\Optimo_Combined.csproj">
+      <Project>{48b99343-72a7-4db0-83f1-b37f7f1fb784}</Project>
+      <Name>Optimo_Combined</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Optimo-SMPSO\Optimo_SMPSO.csproj">
+      <Project>{1078fc20-8dd5-445c-a28d-fa6ed008232e}</Project>
+      <Name>Optimo_SMPSO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Optimo\Optimo.csproj">
+      <Project>{0ed4c907-65b1-43e5-a0cb-c6a8b126759d}</Project>
+      <Name>Optimo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Optimo_MOEAD\Optimo_MOEAD.csproj">
+      <Project>{b755078b-6662-463e-97b8-ac35f788b2aa}</Project>
+      <Name>Optimo_MOEAD</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

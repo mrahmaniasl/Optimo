@@ -1,0 +1,4 @@
+C:\Users\Alex\Desktop\Optimo-master\Optimo-SMPSO\bin\Debug\Optimo-SMPSO.dll
+C:\Users\Alex\Desktop\Optimo-master\Optimo-SMPSO\bin\Debug\Optimo-SMPSO.pdb
+C:\Users\Alex\Desktop\Optimo-master\Optimo-SMPSO\obj\Debug\Optimo-SMPSO.dll
+C:\Users\Alex\Desktop\Optimo-master\Optimo-SMPSO\obj\Debug\Optimo-SMPSO.pdb

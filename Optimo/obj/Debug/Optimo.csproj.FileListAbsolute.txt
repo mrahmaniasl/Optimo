@@ -1,0 +1,8 @@
+C:\Users\Alex\Desktop\Optimo-master\Optimo\bin\Debug\Optimo.dll
+C:\Users\Alex\Desktop\Optimo-master\Optimo\bin\Debug\Optimo.pdb
+C:\Users\Alex\Desktop\Optimo-master\Optimo\obj\Debug\Optimo.dll
+C:\Users\Alex\Desktop\Optimo-master\Optimo\obj\Debug\Optimo.pdb
+C:\Users\Alex\Dropbox\Alex-Mohammad\Optimo-master-Alex\Optimo\bin\Debug\Optimo.dll
+C:\Users\Alex\Dropbox\Alex-Mohammad\Optimo-master-Alex\Optimo\bin\Debug\Optimo.pdb
+C:\Users\Alex\Dropbox\Alex-Mohammad\Optimo-master-Alex\Optimo\obj\Debug\Optimo.dll
+C:\Users\Alex\Dropbox\Alex-Mohammad\Optimo-master-Alex\Optimo\obj\Debug\Optimo.pdb
