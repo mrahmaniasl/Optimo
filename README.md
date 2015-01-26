@@ -5,6 +5,8 @@ Optimo is a multi-objective optimization tool and it is part of for BIM-based Pe
 ## Get Optimo ##
 
  - You can [setup Optimo](https://github.com/BPOpt/Optimo/wiki/Setup-Optimo) following the steps provided in the Wiki page. 
+ 
+<iframe width="560" height="315" src="//www.youtube.com/embed/oc7znmsJ_vw" frameborder="0" allowfullscreen></iframe>
 
 ## Optimo License ##
 
