@@ -41,7 +41,7 @@ namespace Optimo
 {
   internal class ProblemFactory
   {
-    public Problem getProblem (String name, Object parameters, int numParam, int[] lowerLimit, int[] upperLimit, int numObj)
+      public Problem getProblem(String name, Object parameters, int numParam, double[] lowerLimit, double[] upperLimit, int numObj)
     {
       string problemName = "Optimo." + name;
 
@@ -50,8 +50,8 @@ namespace Optimo
       Type[] types = new Type[5];
       types[0] = typeof(String);
       types[1] = typeof(int);  //Mohammad
-      types[2] = typeof(int[]);
-      types[3] = typeof(int[]);
+      types[2] = typeof(double[]);
+      types[3] = typeof(double[]);
       types[4] = typeof(int);
 
       ConstructorInfo ci = type.GetConstructor (types);

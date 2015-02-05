@@ -36,7 +36,8 @@ namespace Optimo
     public static class NSGA_II
     {
         //creates NSGA-II Algorithm using Lower Limits, Upper Limits and numObjectives
-        private static Algorithm CreateAlgorithm (double numObjectives, List<int> lowerLimits, List<int> upperLimits)
+        //private static Algorithm CreateAlgorithm (double numObjectives, List<int> lowerLimits, List<int> upperLimits)
+        private static Algorithm CreateAlgorithm(double numObjectives, List<double> lowerLimits, List<double> upperLimits)
         {
             String algorithmName = "NSGAII";
             String problemName = "myTest";
@@ -44,8 +45,13 @@ namespace Optimo
             int NumParam = lowerLimits.Count;
             int numObj = Convert.ToInt32(numObjectives);
 
-            int[] upperLim = upperLimits.ToArray<int>();
-            int[] lowerLim = lowerLimits.ToArray<int>();
+            //trying to change the upper and lower limits to double
+            double[] upperLim = upperLimits.ToArray<double>();
+            double[] lowerLim = lowerLimits.ToArray<double>();
+
+
+            //int[] upperLim = upperLimits.ToArray<int>();
+            //int[] lowerLim = lowerLimits.ToArray<int>();
 
             Object settingsParams = problemName;
             SettingsFactory sf = new SettingsFactory();
@@ -131,7 +137,7 @@ namespace Optimo
         /// <param name="lowerLimits">List of lower limits for all variable. The number of lower limits should be the same as the number of variables.</param>
         /// <param name="upperLimits">List of upper limits for all variable. The number of upper limits should be the same as the number of variables.</param>
         /// <returns>An initial solution list.</returns>
-        public static List<List<double>> InitialSolutionList(double populationSize, double numObjectives, List<int> lowerLimits, List<int> upperLimits)
+        public static List<List<double>> InitialSolutionList(double populationSize, double numObjectives, List<double> lowerLimits, List<double> upperLimits)
         {
             //number of varables plus number of objectives
             int numObj = Convert.ToInt32(numObjectives);
@@ -186,7 +192,7 @@ namespace Optimo
         /// <param name="lowerLimits">List of lower limits for new generation.</param>
         /// <param name="upperLimits">List of upper limits for new generation.</param>
         /// <returns>Generated population list.</returns>
-        public static List<List<double>> GenerationAlgorithm(List<List<double>> populationList, List<int> lowerLimits, List<int> upperLimits)
+        public static List<List<double>> GenerationAlgorithm(List<List<double>> populationList, List<double> lowerLimits, List<double> upperLimits)
         {
             int numVar = lowerLimits.Count;
             int numObj = populationList.Count - numVar;
@@ -235,7 +241,7 @@ namespace Optimo
         /// <param name="lowerLimits">List of lower limits.</param>
         /// <param name="upperLimits">List of upper limits.</param>
         /// <returns></returns>
-        public static List<List<double>> Sorting(List<List<double>> populationList, List<List<double>> offspringList, List<int> lowerLimits, List<int> upperLimits)
+        public static List<List<double>> Sorting(List<List<double>> populationList, List<List<double>> offspringList, List<double> lowerLimits, List<double> upperLimits)
         {
             int numVar = lowerLimits.Count;
             int numObj = populationList.Count - numVar;

@@ -13,10 +13,10 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            List<int> lowerLimits = new List<int>();
+            List<double> lowerLimits = new List<double>();
             lowerLimits.Add(-10); lowerLimits.Add(-10);
 
-            List<int> upperLimits = new List<int>();
+            List<double> upperLimits = new List<double>();
             upperLimits.Add(10); upperLimits.Add(10);
 
             List<List<double>> populationList = new List<List<double>>();

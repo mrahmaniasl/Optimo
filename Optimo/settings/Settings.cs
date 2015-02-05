@@ -43,11 +43,11 @@ namespace Optimo
     public String problenName_ { get; set; }
     public String encoding_ {get; set ;}
     public int numParams_ { get; set; }
-    public int[] lowerLim_ { get; set; }
-    public int[] upperLim_ { get; set; }
+    public double[] lowerLim_ { get; set; }
+    public double[] upperLim_ { get; set; }
     public int numObj_ { get; set; }
 
-    public Settings (String problemName, int numP, int[] lowerLim, int[] upperLim, int numObj)
+    public Settings(String problemName, int numP, double[] lowerLim, double[] upperLim, int numObj)
     {
       problem_ = null;
       problenName_ = problemName;

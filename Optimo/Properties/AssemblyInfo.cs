@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Optimo")]
+[assembly: AssemblyTitle("JmetalPackage")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Optimo")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("TAMU ITS")]
+[assembly: AssemblyProduct("JmetalPackage")]
+[assembly: AssemblyCopyright("Copyright © TAMU ITS 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

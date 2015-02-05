@@ -53,7 +53,7 @@ namespace Optimo
     public double mutationDistributionIndex_ ;
     public double crossoverDistributionIndex_ ;
 
-    public NSGAII_settings(String problemName, int numPar, int[] lowerLim, int[] upperLim, int numObj)
+    public NSGAII_settings(String problemName, int numPar, double[] lowerLim, double[] upperLim, int numObj)
         : base(problemName, numPar, lowerLim, upperLim, numObj)
     {
       encoding_ = "Real";

@@ -39,7 +39,8 @@ namespace Optimo
 {
     internal class SettingsFactory
     {
-        public Settings getSettingsObject(string algorithmName, string problemName, int NumParam, int[] lowerLim, int[] upperLim, int numObj)
+        //public Settings getSettingsObject(string algorithmName, string problemName, int NumParam, int[] lowerLim, int[] upperLim, int numObj)
+        public Settings getSettingsObject(string algorithmName, string problemName, int NumParam, double[] lowerLim, double[] upperLim, int numObj)
         {
             string str = "Optimo." + algorithmName + "_settings";
 
@@ -47,8 +48,8 @@ namespace Optimo
             Type[] types = new Type[5];
             types[0] = typeof(String);
             types[1] = typeof(int); //Mohammad
-            types[2] = typeof(int[]);
-            types[3] = typeof(int[]);
+            types[2] = typeof(double[]);
+            types[3] = typeof(double[]);
             types[4] = typeof(int);
 
             ConstructorInfo ci = type.GetConstructor(types);

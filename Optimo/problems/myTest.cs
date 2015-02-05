@@ -41,7 +41,7 @@ namespace Optimo
 {
     internal class myTest : Problem
     {
-        public myTest(String solutionType, int NumParam, int[] lowerLim, int[] upperLim, int numObj)
+        public myTest(String solutionType, int NumParam, double[] lowerLim, double[] upperLim, int numObj)
         {
             numberOfVariables_ = NumParam;
             numberOfObjectives_ = numObj;
